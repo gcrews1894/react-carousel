@@ -28,6 +28,6 @@ button {
 	transition: all 1s ease;
 	&:hover,
 	&:active {
-		background: hsl(225, 20%, 70);
+		background: hsl(225, 20%, 70%);
 	}
 }
