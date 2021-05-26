@@ -1,0 +1,10 @@
+@import "./Components/App.scss";
+@import "./Components/Slide.scss";
+@import "./Components/Carousel.scss";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", sans-serif;
+}

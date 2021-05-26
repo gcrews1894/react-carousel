@@ -1,0 +1,33 @@
+.app {
+	height: 100vh;
+	margin: 0;
+}
+button {
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+	z-index: 10;
+	padding: 0.75em 2em;
+}
+
+.carButton {
+	background: black;
+	border: 2px solid white;
+	color: white;
+	transition: all 1s ease;
+	&:hover,
+	&:active {
+		background: hsl(80, 30%, 20%);
+	}
+}
+
+.fashionButton {
+	background: white;
+	border: 2px solid black;
+	color: black;
+	transition: all 1s ease;
+	&:hover,
+	&:active {
+		background: hsl(225, 20%, 70);
+	}
+}

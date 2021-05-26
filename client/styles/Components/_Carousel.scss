@@ -1,0 +1,50 @@
+.carousel {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.active {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.leftArrow {
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	z-index: 10;
+	cursor: pointer;
+	user-select: none;
+}
+.rightArrow {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	z-index: 10;
+	cursor: pointer;
+	user-select: none;
+}
+
+.dotsDiv {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	left: 45%;
+	right: 45%;
+	bottom: 25px;
+	width: 10%;
+	.dot {
+		color: hsl(0, 0%, 70%);
+		box-shadow: 1px 5px 15px black;
+		border: none;
+		border-radius: 50%;
+		&.bright {
+			color: white;
+		}
+	}
+}
