@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 export default function Slide(props) {
+	// fairly straight-forward, uses props given to build each slide
 	const { title, media, cta, heading, position, status } = props;
 
 	return (

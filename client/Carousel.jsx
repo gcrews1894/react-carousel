@@ -14,6 +14,7 @@ export default function Carousel(props) {
 	const [currInterval, setCurrInterval] = useState();
 	const { url, toggle } = props;
 
+	// watches for changes in url prop, then refetches data accordingly
 	useEffect(() => {
 		fetch(url)
 			.then((res) => res.json())
@@ -25,6 +26,7 @@ export default function Carousel(props) {
 	}, [toggle]);
 	// console.log("These are the details:", details);
 
+	// attemped to use intervals to automatically transition to next slide on a timer.
 	// useEffect(() => {
 	// 	if (!isLoading) {
 	// 		setCurrInterval(setInterval(() => handleClick("forward"), 4000));
@@ -69,6 +71,7 @@ export default function Carousel(props) {
 		return dots;
 	};
 
+	//universal method to handle moving forward/backward in slides
 	const handleClick = (direction) => {
 		if (details && direction === "forward") {
 			return setCurrent((prevCurrent) =>
@@ -83,6 +86,7 @@ export default function Carousel(props) {
 		return;
 	};
 
+	// used FA Icons because the svgs within /assets weren't rendering for some reason. I suspect there was an issue with webpack config.
 	return (
 		<div className='carousel'>
 			<FontAwesomeIcon
